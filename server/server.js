@@ -6,9 +6,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 require('./config/mongoose.config');
-const allMyBookRoutes = require('./routes/fitness.routes')
-allMyBookRoutes(app);
+const allMyRecipeRoutes = require('./routes/recipe.routes')
+allMyRecipeRoutes(app);
 
 app.listen(8000, () => {
-    console.log("Listening at Port 8000")
+    console.log("Listening at Port 8000!")
 })
